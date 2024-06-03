@@ -1,0 +1,29 @@
+{
+    "descriptor": {
+        "name": "ArgoSecure",
+        "displayName": "ArgoSecure",
+        "description": "Skills that get data from the ArgoSecure API to get a list of assets OR to get vulnerabilities for a specific asset",
+        "descriptionDisplay": "Asset information, asset details, endpoint information, endpoint details",
+        "category": "Plugin",
+        "supportedAuthTypes": ["ApiKey"],
+        "authorization": {
+            "key": "Authorization",
+            "type": "APIKey",
+            "location": "Header"
+        }
+    },
+    "skillGroups": [
+        {
+            "format": "API",
+            "settings": {
+                "OpenApiSpecUrl": "https://github.com/logan-dewitt/ArgoCopilot/raw/main/ArgoGetAssetList.yaml"
+            }
+        },
+        {
+            "format": "API",
+            "settings": {
+                "OpenApiSpecUrl": "https://github.com/logan-dewitt/ArgoCopilot/raw/main/ArgoGetAssetVulns.yaml"
+            }
+        }
+    ]
+}
