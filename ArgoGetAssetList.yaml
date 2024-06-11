@@ -17,9 +17,3 @@ paths:
                 type: string
             required: true
             description: The Tenant ID to provide for the API call.
-      responses:
-        '200':
-          description: Success
-
-        '401':
-          description: Unauthorized
