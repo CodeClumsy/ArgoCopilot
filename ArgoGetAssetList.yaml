@@ -17,3 +17,15 @@ paths:
                 type: string
             required: true
             description: The Tenant ID to provide for the API call.
+      responses:
+        '200':
+          description: gets a list of all assets and endpoints
+          content:
+            application/json: 
+              schema:
+                type: array
+                items:
+                  type: object
+
+        '401':
+          description: Unauthorized
