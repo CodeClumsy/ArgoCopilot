@@ -10,6 +10,7 @@ paths:
     get:
       operationId: GetAssetList
       summary: get a list of all assets and endpoints
+      description: get a list of all assets and endpoints, including basic device info and a list of the services that the device is currently monitored by.
       parameters:
           - in: path
             name: tenantId
