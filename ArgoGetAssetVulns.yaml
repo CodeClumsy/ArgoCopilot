@@ -10,7 +10,11 @@ paths:
     get:
       operationId: GetAssetDetails
       summary: Retrieve vulnerability information for a specific asset
-      description: Retrieve vulnerability information for a specific asset, including data regarding each vulnerability and its severity of impact and basic details about the vulnerability.
+      description: |
+        Retrieve vulnerability information for a specific asset, including data regarding each vulnerability and its severity of impact and basic details about the vulnerability.
+        #ExamplePrompt Use ArgoSecure to get asset details and the top 10 vulnerabilities for the host.
+        #ExamplePrompt Ask ArgoSecure if this host has any vulnerabilities.
+        #ExamplePrompt Ask ArgoSecure for details about the host.
       requestBody:
         required: true
         content:
