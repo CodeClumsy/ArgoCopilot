@@ -10,6 +10,7 @@ paths:
     get:
       operationId: GetAssetDetails
       summary: Retrieve vulnerability information for a specific asset
+      description: Retrieve vulnerability information for a specific asset, including data regarding each vulnerability and its severity of impact and basic details about the vulnerability.
       requestBody:
         required: true
         content:
