@@ -10,7 +10,12 @@ paths:
     get:
       operationId: GetAssetList
       summary: get a list of all assets and endpoints
-      description: get a list of all assets and endpoints, including basic device info and a list of the services that the device is currently monitored by.
+      description: |
+        Get a list of all assets and endpoints, including basic device info and a list of the services that the device is currently monitored by.
+        #ExamplePrompt Get a list of my assets from ArgoSecure
+        #ExamplePrompt Ask ArgoSecure if this host is monitored by SIEM
+        #ExamplePrompt Ask ArgoSecure if this host has data-protection backups enabled
+        #ExamplePrompt Ask ArgoSecure for my devices
       parameters:
           - in: path
             name: tenantId
